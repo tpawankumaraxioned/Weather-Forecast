@@ -13,7 +13,6 @@ findBtn.addEventListener('click',ev => {
 // Weather api function starts here
 function get_data(cities){
   cities.map(city => {
-    // console.log(city);
     const url = 'https://api.openweathermap.org/data/2.5/forecast?q='+ city +'&units=metric&appid=43812e2ef7977461689b72c7cb246c21';
   
     fetch(url)
@@ -24,9 +23,6 @@ function get_data(cities){
       let i = 0;
       list.map(li => {
         if(i % 8 == 0){
-          // console.log(i);
-          // console.log(li.main.temp);
-          // console.log(li.weather[0]["main"]);
           let icon = `https://openweathermap.org/img/wn/${li.weather[0]["icon"]}@2x.png`;
 
           let li1 = document.createElement("li");
