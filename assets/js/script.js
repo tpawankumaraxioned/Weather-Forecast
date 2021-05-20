@@ -31,7 +31,7 @@ function get_data(cities){
             <h2 class="city-name">
               <span>${city}</span>
             </h2>
-            <span class="curr-Time">${li.dt_txt}</span>
+            <span class="curr-Time">${li.dt_txt.slice(0, -3)}</span>
             <span class="curr-Temp">${li.main.temp}<sup>o</sup>C</span>
             <figure>
               <img class="city-icon" src=${icon} alt=${li.weather[0]["main"]}>
