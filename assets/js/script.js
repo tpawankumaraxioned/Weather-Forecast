@@ -1,13 +1,13 @@
 // OnClick search function starts here
-var findBtn = document.querySelector('.findBtn');
+let findBtn = document.querySelector('.findBtn');
 
 findBtn.addEventListener('click',ev => {
   ev.preventDefault();
-  var find_location = document.querySelector('#city-in').value;
-  let b = find_location.split(',');   
+  let find_location = document.querySelector('#city-in').value;
+  let cities_name = find_location.split(',');   
   document.querySelector('.weather-list').innerHTML= '';
 
-  get_data(b);
+  get_data(cities_name);
 });
 // OnClick search function ends here
 // Weather api function starts here
