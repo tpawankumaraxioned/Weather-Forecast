@@ -29,7 +29,33 @@
     <div class="container">
       <!--main starts here-->
       <main>
-
+        <div class="weather-check">
+          <div class="wrapper">
+            <!-- location search starts here -->
+            <form action="#FIXME" class="searchForm" method="GET">
+              <div class="search">
+                <input type="text" name="search" id="city-in" class="search-location" placeholder="Find your location...">
+              </div>
+              <button class="findBtn" id="findLoc">Find</button>
+            </form>
+            <!-- location search ends here -->
+            <!-- weather forecast starts here -->
+            <div class="current-weather">
+              <div class="weather-data">
+                <ul class="weather-date">
+                  <li class="city-name" id="city-loc"></li>
+                  <li id="current-time"></li>
+                  <li id="current-weather"></li>
+                </ul>
+              </div>
+              <div id="errorMsg">
+                <h2>Sorry...!!!!</h2>
+                <p>City Name Not Found</p>
+              </div>
+            </div>
+            <!-- weather forecast ends here -->
+          </div>
+        </div>
       </main>
       <!--main ends here-->
     </div>
