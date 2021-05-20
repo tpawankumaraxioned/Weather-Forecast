@@ -182,13 +182,13 @@ sub { bottom: -.25em; }
   margin: 5px 0 5px 15px;
   display: inline-block;
   text-align: center;
-  font-size: 26px;
-  font-weight: 600;
 }
 
 .curr-Temp {
   display: block;
   margin: 5px 15px;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 figcaption {
